@@ -12,8 +12,13 @@
   <% end %>
 
   <div class="field">
+    <p>Edición para este curso </p>
     <%= form.label :title %>
     <%= form.text_field :title, id: :course_title %>
+  </div>
+  <div class="field">
+    <%= form.label :descripción %>
+    <%= form.text_area :description %>
   </div>
 
   <div class="actions">
