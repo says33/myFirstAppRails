@@ -9,5 +9,10 @@
   <strong>Descripción:</strong>
   <%= @course.description %>
 </p>
+
+<p>
+  <strong>Costo:</strong>
+  <%= @course.cost %>
+</p>
 <%= link_to 'Edit', edit_course_path(@course) %> |
 <%= link_to 'Back', courses_path %>
