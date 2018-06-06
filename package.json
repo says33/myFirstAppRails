@@ -1,5 +1,12 @@
 {
   "name": "miFirstApp",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:LeoVergara1/myFirstAppRails.git",
+  "author": "Brandon Vergara <brandon@makingdevs.com>",
+  "license": "MIT"
 }
