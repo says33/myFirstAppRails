@@ -2,7 +2,9 @@
 
 try{
 
-    checkout("git@github.com:says33/myFirstAppRails.git", "master")
+	node('master') {
+		checkout("git@github.com:says33/myFirstAppRails.git", "master")
+	}
 
 } catch(caughtError) {
     currentBuild.result = "FAILURE"
