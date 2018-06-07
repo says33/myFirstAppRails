@@ -4,6 +4,9 @@ try{
 
 	node('master') {
 		checkout("git@github.com:says33/myFirstAppRails.git", "master")
+
+		downloadDep()
+
 	}
 
 } catch(caughtError) {
@@ -28,5 +31,15 @@ def checkout(repo, branch) {
                                        ]
                  ])
     }
+
+}
+
+
+def downloadDep() {
+
+	stage('Install dependencies'){
+		sh '''gem install bundler
+			bundle install'''
+	}
 
 }
